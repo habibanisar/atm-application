@@ -27,14 +27,14 @@ if(pinAnswer.q1 === pin){
         }]);
         if (amountAns.amount < myBalance ){
             myBalance -= amountAns.amount;
-            console.log("Now your balance is" + myBalance)
+            console.log("Now your remaining balance is "  +  myBalance)
         }
         else{
             console.log("insufficient balance")
         }
     } 
     else if(opr.operation === "Check balance"){
-        console.log("your current balance is" + myBalance)
+        console.log("your current balance is "  +  myBalance)
     }
     else if (opr.operation === "Fast cash"){
         let fast = await inquirer.prompt(
